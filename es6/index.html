@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Максимова Ольга Java13-14</title>
+	<link rel="stylesheet" href="css/zero-style.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script type="text/javascript" src="js/tmpl.js"></script>
+		<script type="text/javascript" src="js/data.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+</head>
+
+<body>
+
+
+	<script type="text/template" id="guestTempl">
+
+	<h1><%= title %></h1>
+
+	<ul>
+	
+	<% for (var i=0; i < qBase.length; i++){ %>
+		<li>
+			<h2> <%= qBase[i].qText %> </h2>
+			<form >
+			
+				<% for (var j=1; j < 4; j++){ %>
+				<label for="<%=i%><%=j%>" class="qForm__ch">
+				<input type="radio" id="<%=i%><%=j%>" name = "Rad<%=i%>">
+				<%= qBase[i].answers[j-1] %></label>
+
+				<% }; %>
+				
+			</form>
+		</li>
+		
+	<% }; %>
+
+	</ul>
+ 	
+	<button class="rez__button" ><%= checkValue %></button>
+ 
+	</script>
+ 
+
+ 
+
+	<!-- Модальное окно -->
+ 
+	<div id="modal_form"> 
+   
+		<span id="modal_close">X</span> 
+	
+		<div id="modal_text"> </div> 
+	
+	</div>
+
+	<div id="overlay"></div><!-- Пoдлoжкa модального окна-->
+
+</body>
+</html>

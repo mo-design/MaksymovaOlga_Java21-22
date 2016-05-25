@@ -1,0 +1,102 @@
+ body {
+	font-family: sans-serif;
+	font-size: 14px;
+	padding-left: 100px;	
+}
+
+h1{
+		padding: 30px 150px 20px;
+		font-size: 18px;
+}
+
+
+h2 {
+		font-size: 17px;
+}
+
+
+ul li {
+	
+	padding: 10px 0;
+	
+	
+}
+.qForm__ch {
+	display: block;	
+	padding: 3px 15px;
+}
+
+
+.rez__button {
+		width: 235px;
+		height: 50px;
+		margin: 20px 150px;
+		background: #d3e0f1;
+		color: #000;
+		font-size: 15px;
+		border: 1px solid #000;
+	
+}
+
+/* Модальное окно */
+
+
+
+
+
+#modal_form {
+	width: 300px; 
+	height: 300px; 
+	border: 3px #000 solid;
+	background: #fff;
+	position: fixed; 
+	top: 45%;
+	left: 50%;
+	margin-top: -150px;
+	margin-left: -150px; 
+	display: none;
+	opacity: 0; 
+	z-index: 5; 
+	padding: 20px 10px;
+}
+
+
+
+#modal_form #modal_close {
+	width: 21px;
+	height: 21px;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	cursor: pointer;
+	display: block;
+}
+
+#modal_text p {
+	margin-top: 10px;
+	margin-left: 20px;
+	font-size: 14px;	
+}
+
+
+
+b {
+	font-weight: bold;
+}
+
+
+
+#overlay {
+	z-index:3; 
+	position:fixed; 
+	background-color:#000; 
+	opacity:0.8; 
+	-moz-opacity:0.8; 
+	filter:alpha(opacity=80);
+	width:100%; 
+	height:100%; 
+	top:0; 
+	left:0;
+	cursor:pointer;
+	display:none; 
+}
